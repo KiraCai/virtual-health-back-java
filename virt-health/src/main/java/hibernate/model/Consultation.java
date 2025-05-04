@@ -13,8 +13,8 @@ public class Consultation {
     @Column(name = "id")
     private Long id;
 
-    @OneToOne(cascade = CascadeType.ALL)
-    @JoinColumn(name = "id_doctor")
+    @ManyToOne
+    @JoinColumn(name = "id_doctor", referencedColumnName = "id")
     private Doctor doctor;
 
     @Column(name = "date")

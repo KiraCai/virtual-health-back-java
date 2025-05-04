@@ -13,12 +13,9 @@ public class Vaccination {
     @Column(name = "id")
     private Long id;
 
-    @OneToOne(cascade = CascadeType.ALL)
-    @JoinColumn(name = "id_doctor")
+    @ManyToOne
+    @JoinColumn(name = "id_doctor", referencedColumnName = "id")
     private Doctor doctor;
-
-    /*@OneToOne(mappedBy = "vaccination")
-    Doctor doctor1;*/
 
     @Column(name = "date")
     private LocalDate date;
