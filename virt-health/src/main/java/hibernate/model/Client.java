@@ -25,6 +25,9 @@ public class Client {
     @Column(name = "date_birth")
     private LocalDate date_birth;
 
+    @Column(name = "sex")
+    Character sex;
+
     @Column(name = "email")
     String email;
 
@@ -45,13 +48,17 @@ public class Client {
     public Client() {
     }
 
-    public Client(String first_name, String last_name, LocalDate date_birth, String email, Integer tel, String address) {
+    public Client(String first_name, String last_name, LocalDate date_birth, Character sex, String email, Integer tel,
+                  String address, byte[] document, byte[] photo) {
         this.first_name = first_name;
         this.last_name = last_name;
         this.date_birth = date_birth;
+        this.sex = sex;
         this.email = email;
         this.tel = tel;
         this.address = address;
+        this.document = document;
+        this.photo = photo;
     }
 
     public Long getId() {
@@ -77,6 +84,15 @@ public class Client {
     public void setDate_birth(LocalDate date_birth) {
         this.date_birth = date_birth;
     }
+
+    public Character getSex(){
+        return this.sex;
+    }
+
+    public void setSex(Character sex){
+        this.sex = sex;
+    }
+
     public String getEmail() {
         return this.email;
     }
