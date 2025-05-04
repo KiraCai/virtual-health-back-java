@@ -3,6 +3,7 @@ package hibernate;
 import hibernate.config.AppConfig;
 import hibernate.dao.UserDao;
 import hibernate.model.Client;
+import hibernate.service.UserService;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 import java.sql.SQLException;
@@ -15,7 +16,7 @@ public class MainApp {
         AnnotationConfigApplicationContext context =
                 new AnnotationConfigApplicationContext(AppConfig.class);
         System.out.println("Hi1!");
-        UserDao userDao = context.getBean(UserDao.class);
+        UserService userService = context.getBean(UserService.class);
         Client client1 = new Client(
                 "Kay",
                 "Era",
@@ -29,8 +30,11 @@ public class MainApp {
                 HexFormat.ofDelimiter(":")
                         .parseHex("e0:4f:d0:20:ea:3a:69:10:a2:d8:08:00:2b:30:30:9d")
         );
-        userDao.add(client1);
+        System.out.println("Hi2!");
+        userService.add(client1);
         System.out.println("finish");
+
+        context.close();
 
     }
 }
