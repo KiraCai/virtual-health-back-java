@@ -1,4 +1,4 @@
-package hibernate.model;
+/*package hibernate.model;
 
 import javax.persistence.*;
 import java.util.List;
@@ -36,4 +36,4 @@ public class History {
         return this.consultations;
     }
 
-}
+}*/

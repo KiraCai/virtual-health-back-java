@@ -9,3 +9,7 @@ w
 G.idea/sonarlint/issuestore/8/e/8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d,b\4\b4a0b63ce8560bbc5de0f9995c20cc861dc2adb3
 H
 untitled/virt-health.iml,d\d\dd8c2826df0870cb7f1ab90cada9d0707ef9cf34
+B
+docker-compose.yml,3\5\35b8c13cf2eb2a194eada000eb310d65aed53b2a
+C
+virt-health/pom.xml,e\2\e2d8a69ceeb27bcd7b689597ff5f508297fddb20

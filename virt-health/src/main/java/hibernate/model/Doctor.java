@@ -1,4 +1,4 @@
-package hibernate.model;
+/*package hibernate.model;
 
 import javax.persistence.*;
 import java.time.LocalDate;
@@ -204,4 +204,4 @@ public class Doctor {
     public void setAbout(String about) {
         this.about = about;
     }
-}
+}*/

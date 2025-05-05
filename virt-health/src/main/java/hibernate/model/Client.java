@@ -12,9 +12,9 @@ public class Client {
     @Column(name = "id")
     private Long id;
 
-    @OneToOne(cascade = CascadeType.ALL)
+    /*@OneToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "id_history")
-    private History history;
+    private History history;*/
 
     @Column(name = "first_name")
     String first_name;
@@ -37,19 +37,19 @@ public class Client {
     @Column(name = "address")
     String address;
 
-    @Lob
+    /*@Lob
     @Column(name = "document")
     private byte[] document; //save doc
 
     @Lob
     @Column(name = "photo", columnDefinition = "BLOB")
-    private byte[] photo;
+    private byte[] photo;*/
 
     public Client() {
     }
 
     public Client(String first_name, String last_name, LocalDate date_birth, Character sex, String email, Integer tel,
-                  String address, byte[] document, byte[] photo) {
+                  String address) {
         this.first_name = first_name;
         this.last_name = last_name;
         this.date_birth = date_birth;
@@ -57,8 +57,6 @@ public class Client {
         this.email = email;
         this.tel = tel;
         this.address = address;
-        this.document = document;
-        this.photo = photo;
     }
 
     public Long getId() {
@@ -110,17 +108,5 @@ public class Client {
     }
     public void setAddress(String address) {
         this.address = address;
-    }
-    public byte[] getDocument() {
-        return this.document;
-    }
-    public void setDocument(byte[] document) {
-        this.document = document;
-    }
-    public byte[] getPhoto() {
-        return this.photo;
-    }
-    public void setPhoto(byte[] photo) {
-        this.photo = photo;
     }
 }

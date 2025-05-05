@@ -1,4 +1,4 @@
-package hibernate.model;
+/*package hibernate.model;
 
 import javax.persistence.*;
 import java.time.LocalDate;
@@ -99,4 +99,4 @@ public class Test {
     public void setDocument(byte[] document) {
         this.document = document;
     }
-}
+}*/

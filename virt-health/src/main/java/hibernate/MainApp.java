@@ -24,11 +24,11 @@ public class MainApp {
                 'm',
                 "kay.era@example.com",
                 1234567890,
-                "123 Elm St, Springfield, IL",
-                HexFormat.ofDelimiter(":")
+                "123 Elm St, Springfield, IL"
+                /*HexFormat.ofDelimiter(":")
                         .parseHex("e0:4f:d0:20:ea:3a:69:10:a2:d8:08:00:2b:30:30:9d"),
                 HexFormat.ofDelimiter(":")
-                        .parseHex("e0:4f:d0:20:ea:3a:69:10:a2:d8:08:00:2b:30:30:9d")
+                        .parseHex("e0:4f:d0:20:ea:3a:69:10:a2:d8:08:00:2b:30:30:9d")*/
         );
         System.out.println("Hi2!");
         userService.add(client1);
